@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # Author: Steve Toback
+# Based on Sample AWS code, Adafruit code
 
 from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTShadowClient
 import sys
@@ -25,11 +26,13 @@ GGC_ADDR_NAME = "ggc-host"    # stores GGC host address
 
 # Shadow JSON schema:
 #
-# Name: Bot
+# 
 # {
 #	"state": {
-#		"temperature": 68.0,
-#       "humidity": 55.8
+# "reported": {
+#   "humidity": 96.9,
+#   "temperature": 84.7
+# }
 #		}
 #	}
 # }
